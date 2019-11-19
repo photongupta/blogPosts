@@ -1,7 +1,7 @@
 //const fs = require("fs");
 
-const arrayMaker = function(string) {
-  return string.split(",");
+const toPostDetails = function(row) {
+  return row.split(",");
 };
 
 const addIDInPostList = function(post) {
@@ -19,7 +19,7 @@ const filterHeader = function(content) {
 
 /*const createPostsList  = function() {
   let posts = content.slice(1,3);
-  posts = posts.map(arrayMaker);
+  posts = posts.map(toPostDetails);
   console.log(posts);
   let postlist = posts.map(addIDInPostList);
   console.log(postlist);
@@ -27,5 +27,5 @@ const filterHeader = function(content) {
     return ;
 };*/
 exports.addIDInPostList = addIDInPostList; 
-exports.arrayMaker = arrayMaker;
+exports.toPostDetails = toPostDetails;
 exports.filterHeader =filterHeader;

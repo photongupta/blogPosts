@@ -7,9 +7,9 @@ describe("addIDInPostList",function(){
   });
 });
 
-describe("arrayMaker",function(){
+describe("toPostDetails",function(){
     it("should split the string and give array ",function(){
-      assert.deepStrictEqual(lib.arrayMaker("r,a,s"),["r","a","s"]);
+      assert.deepStrictEqual(lib.toPostDetails("r,a,s"),["r","a","s"]);
     });
 });
 
